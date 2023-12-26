@@ -8,22 +8,26 @@ class Swap
 	int a,b;
 	
 	public:
+		
 		friend void swap(Swap obj);
 		
 };
+
 void swap(Swap obj)
 {
-//	int a,b;
-//	obj.a=25;
-//	obj.b=52;
-obj.a=23;
-obj.b=45;
+
+	cout<<"\n\n\tEnter the value for a : ";
+	cin>>obj.a;
+	cout<<"\n\n\tEnter the value for b : ";
+	cin>>obj.b;
+
 	obj.a=obj.a+obj.b; //swap the number
 	obj.b=obj.a-obj.b;
 	obj.a=obj.a-obj.b;
 
-	cout<<"Swapping numbers \n"<<"a :"<<obj.a<<endl<<"b :"<<obj.b;
+	cout<<"\n\n\tSwapping numbers"<<"\n\n\ta :"<<obj.a<<endl<<"\tb :"<<obj.b;
 }
+
 int main()
 {
 	Swap ob;
@@ -31,5 +35,3 @@ int main()
 	
 	return 0;
 }
-
-

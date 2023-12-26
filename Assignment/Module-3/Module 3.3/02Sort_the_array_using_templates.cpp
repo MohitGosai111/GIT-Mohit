@@ -1,3 +1,5 @@
+// Write a program of to sort the array using templates
+
 #include<iostream>
 using namespace std;
 
@@ -10,7 +12,7 @@ class A
 		{
 			for(i=0;i<10;i++)
 			{
-				cout<<"enter value  :";
+				cout<<"\n\tenter value  : ";
 				cin>>a[i];
 			}
 		}
@@ -30,7 +32,7 @@ class A
 			}
 			for(i=0;i<10;i++)
 			{
-				cout<<endl<<a[i];
+				cout<<"\n\t"<<a[i];
 			}
 		}
 };

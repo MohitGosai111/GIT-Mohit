@@ -17,7 +17,7 @@ class Student
 		void display()
 		{
 			cout<<"\n\n\t-------- Date of Batch result----------";
-			cout<<"\n\n\tEnter Roll number :"<<endl;
+			cout<<"\n\n\tEnter Roll number :";
 			cin>>roll;
 		}
 };
@@ -40,11 +40,12 @@ class test
 class Result : public Student,public test  //multi level inheritance 
 {
 	public:
+		
 		void display2()
 		{
-			cout<<endl<<"--------------Data inserted--------------";
-			cout<<endl<<"Roll number of student :"<<Student ::roll;
-			cout<<endl<<"Total marks obtained :"<<test::maths+test::science;
+			cout<<"\n\n\t--------------Data inserted--------------";
+			cout<<"\n\n\tRoll number of student :"<<Student ::roll;
+			cout<<"\n\n\tTotal marks obtained :"<<test::maths+test::science;
 		}
 };
 int main()

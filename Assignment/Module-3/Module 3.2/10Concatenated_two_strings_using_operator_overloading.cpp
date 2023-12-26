@@ -1,4 +1,4 @@
-/*Write a program to concatenate the two strings using Operator Overloading */
+//Write a program to concatenate the two strings using Operator Overloading.
 
 #include<iostream>
 #include<string.h>
@@ -11,7 +11,7 @@ class String
         public:
                 void accept_string() //user enter string
                 {
-                        cout<<"\n Enter String              :   ";
+                        cout<<"\n\n\tEnter String : ";
                         cin>>name;
                 }
                 void display_string() //display the string
@@ -26,6 +26,7 @@ class String
                         return s;
                 }
 };
+
 int main()
 {
         String str1, str2, str3;
@@ -33,17 +34,17 @@ int main()
         str1.accept_string();
         str2.accept_string();
 
-        cout<<"\n ----------------------------------------------";
-        cout<<"\n\n First String is           :  ";
+        cout<<"\n\n\t----------------------------------------------";
+        cout<<"\n\n\tFirst String is           :  ";
         str1.display_string();   
 
-        cout<<"\n\n Second String is          :  ";
+        cout<<"\n\n\tSecond String is          :  ";
         str2.display_string();  
 
-        cout<<"\n ----------------------------------------------";
+        cout<<"\n\n\t----------------------------------------------";
         str3=str1+str2;         
-        cout<<"\n\n Concatenated String is    :  ";
+        cout<<"\n\n\tConcatenated String is    :  ";
         str3.display_string();
-    }    
+}    
 
        

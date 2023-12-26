@@ -10,7 +10,8 @@ class Cricketer
 {
        public:
 	     char team1[30]; char team2[30];
-		 int ch=0,t1=0,t2=0, t1score=0,t2score=0,i,avgt1,avgt2;
+		 int ch=0, t1=0, t2=0, t1score=0, t2score=0, i, avgt1, avgt2;
+		 
 		 void display()
 		 {
 		 	cout<<"\n\n\t-------------Welcome to cricket tournament-----------";
@@ -93,12 +94,12 @@ class Batsman :public Cricketer
 		void total_run()
 		{
 			cout<<"\n\n\tTotal runs scored by team "<<Cricketer::team1<<" : "<<Cricketer::t1score;
-			cout<<"\n\n\tTotal runs scored by team "<<Cricketer::team2<<" : "<<Cricketer::t2score;
+			cout<<"\n\tTotal runs scored by team "<<Cricketer::team2<<" : "<<Cricketer::t2score;
 		}
 		void average_runs()
 		{
-			cout<<endl<<"\n\n\tTotal runs scored by team "<<Cricketer::team1<<" : "<<Cricketer::avgt1;
-	    	cout<<endl<<"\n\n\tTotal runs scored by team "<<Cricketer::team2<<" : "<<Cricketer::avgt2;
+			cout<<endl<<"\n\n\tAverage runs scored by team "<<Cricketer::team1<<" : "<<Cricketer::avgt1;
+	    	cout<<endl<<"\n\tAverage runs scored by team "<<Cricketer::team2<<" : "<<Cricketer::avgt2;
 		}
 };
 int main()
