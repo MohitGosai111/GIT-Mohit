@@ -1,0 +1,23 @@
+/* external.css */
+
+/* Normal link styles */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+/* Hover state */
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Visited links */
+a:visited {
+    color: #4b0082;
+}
+
+/* Active (clicked) links */
+a:active {
+    color: #ff4500;
+}
